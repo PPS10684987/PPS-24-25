@@ -5,7 +5,7 @@ Comencé probando manualmente con combinaciones comunes como “admin:admin” y
 
 Luego pasé a utilizar Hydra, una herramienta de fuerza bruta. Le pasé un diccionario de contraseñas y en pocos segundos encontró una combinación válida. Esto demuestra que sin mecanismos como CAPTCHA o retardos entre intentos, es muy fácil automatizar ataques.
 
-Vulnerabilidad: Brute Dorce
+Vulnerabilidad: Brute Force
 ![comando utilizado](../images/Captura2.png)
 
 
