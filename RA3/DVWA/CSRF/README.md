@@ -9,11 +9,14 @@ Lo que hice fue crear un archivo HTML. Dicho archivo será para crear un formula
 ![captura](../images/Captura5.png)
 
 A continuación, abrimos el archivo en el navegador y nos aparecera para cambiar la contraseña.
+
 ![captura](../images/Captura6.png)
 
 Deberemos seleccionar "Change Password" y asi automaticamente se cambiara la contraseña. Como se pude observar en la siguiente imagen, nos aparecerá un error.
+
 ![captura](../images/Captura7.png)
 
 Pero si observamos DVWA nos indicara que la contraseña se ha actualizado con exito.
+
 ![captura](../images/Captura8.png)
 
