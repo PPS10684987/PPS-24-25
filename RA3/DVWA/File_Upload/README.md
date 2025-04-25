@@ -8,29 +8,29 @@ Subí ese archivo sin problema, y luego simplemente entré a la URL donde se gua
 
 Archivo creado:
 
-![captura](../images/Captura14)
+![captura](../images/Captura14.png)
 
 Subida del archivo:
 
-![captura](../images/Captura11)
+![captura](../images/Captura11.png)
 
 Conexion al archivo:
 
-![captura](../images/Captura12)
+![captura](../images/Captura12.png)
 
 Y en cuanto abrí la URL de mi archivo, se conectó automáticamente al servidor, dándome acceso como si estuviera dentro. Fue curioso ver que solo con subir un archivo y visitarlo podía tomar el control.
 
-![captura](../images/Captura13)
+![captura](../images/Captura13.png)
 
 Nivel Medium
 
 Aquí ya no me dejaba subir un archivo .php. Me decía que el tipo de archivo no era válido. Pero descubrí una forma de engañar al sistema: fui a la pestaña de "Red" en las herramientas del navegador, edité la petición y cambié el tipo de archivo (el Content-Type) a algo como image/png.
 
-![captura](../images/Captura15)
-![captura](../images/Captura16)
+![captura](../images/Captura15.png)
+![captura](../images/Captura16.png)
 
 A pesar de que el archivo seguía siendo .php, al cambiar eso y reenviar la petición, la web pensó que era una imagen y lo aceptó.
 
 Después, accedí al archivo de la misma forma que en el nivel Low, y otra vez se me abrió una reverse shell, consiguiendo acceso al sistema.
 
-![captura](../images/Captura17)
+![captura](../images/Captura17.png)
