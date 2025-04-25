@@ -6,7 +6,7 @@ Nivel Low
 
 En el nivel Low, había un formulario donde podías escribir tu nombre y salía en pantalla algo como "Hello, [tu nombre]".
 
-En lugar de poner un nombre normal, escribí: <img src=x onerror="alert(document.cookie)"> y me mostro lo siguiente.
+En lugar de poner un nombre normal, escribí: "<img src=x onerror="alert(document.cookie)">" y me mostro lo siguiente.
 
 ![captura](../images/Captura29.png)
 
