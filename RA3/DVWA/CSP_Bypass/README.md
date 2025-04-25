@@ -6,13 +6,13 @@ Nivel Low
 
 En el nivel Low, no había ninguna política CSP aplicada (o estaba muy mal configurada), así que simplemente accedi directamente añadiendo la alerta en el campo que luego se mostraba en la página:
 
-![captura](../images/Captura35)
+![captura](../images/Captura35.png)
 
 Y funcionó perfectamente. La alerta se ejecutó sin problema, lo que significa que la política no estaba bloqueando nada.
 
 Esto demuestra que si no configuras bien CSP, es como si no existiera.
 
-![captura](../images/Captura36)
+![captura](../images/Captura36.png)
 
 Nivel Medium
 
@@ -20,4 +20,4 @@ En el nivel Medium la cosa se complicó un poco más. Noté que el código que i
 
 Un nonce es un valor aleatorio que el navegador espera ver en los scripts para permitir que se ejecuten.
 
-![captura](../images/Captura37)
+![captura](../images/Captura37.png)
