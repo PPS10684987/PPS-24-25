@@ -17,7 +17,7 @@ Separar el código de la lógica de las pruebas hace que sea más fácil de mant
 ## ¿Cómo funciona el código?
 
 ### 'calculadora.py'
-![captura](images/Captura2.png)
+![captura](/images/Captura2.png)
 1. Se define una **clase** llamada `Calculadora` con un método `multiplicar()` que toma dos parámetros y devuelve su producto.
 2. Si se ejecuta el archivo directamente (no importado), el programa:
    - Lee dos números desde la línea de comandos.
@@ -26,7 +26,7 @@ Separar el código de la lógica de las pruebas hace que sea más fácil de mant
    - Imprime el resultado.
 
 Ejemplo de ejecución:
-![captura](images/Captura3.png)
+![captura](/images/Captura3.png)
 
 
 ### 'test_calculator.py'
@@ -45,4 +45,4 @@ Esto asegura que el método funcione correctamente en distintas situaciones.
 
 Para ejecutar las pruebas: python -m unittest test_calculator.py
 
-![captura](images/Captura3.png)
+![captura](/images/Captura3.png)
