@@ -1,11 +1,30 @@
 pipeline {
     agent any
 
+    triggers {
+        pollSCM('* * * * *')  // Revisa cada minuto si hay nuevos commits (puedes cambiarlo)
+    }
+
     stages {
+        stage('Checkout') {
+            steps {
+                git 'https://github.com/PPS10684987/PPS-24-25.git'
+            }
+        }
+
         stage('Test') {
             steps {
-                sh 'python -m unittest test_calculator.py'
+                sh 'python3 -m unittest test_calculator.py'
             }
+        }
+    }
+
+    post {
+        success {
+            echo 'Pruebas completadas correctamente.'
+        }
+        failure {
+            echo 'Error en las pruebas.'
         }
     }
 }
