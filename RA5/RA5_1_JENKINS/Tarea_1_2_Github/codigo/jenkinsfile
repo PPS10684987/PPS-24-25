@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/PPS10684987/PPS-24-25.git'
+                git branch: 'main', url: 'https://github.com/PPS10684987/PPS-24-25.git'
             }
         }
 
