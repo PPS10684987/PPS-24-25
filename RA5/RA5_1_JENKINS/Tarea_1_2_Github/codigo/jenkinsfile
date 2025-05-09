@@ -14,7 +14,7 @@ pipeline {
 
         stage('Test') {
             steps {
-                sh 'python3 -m unittest PPS-24-25/RA5/RA5_1_JENKINS/Tarea_1_2_Github/codigo/test_calculator.py'
+                sh 'python3 -m unittest test_calculator.py'
             }
         }
     }
