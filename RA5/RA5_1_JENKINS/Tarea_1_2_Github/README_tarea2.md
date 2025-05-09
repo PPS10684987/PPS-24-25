@@ -23,15 +23,23 @@ El `Jenkinsfile` está compuesto por tres etapas principales:
 - **Test**: Se ejecuta el archivo de pruebas usando el comando `python3 -m unittest test_calculator.py`.
 - **Post**: Se muestra un mensaje indicando si las pruebas han sido exitosas.
 
+![captura](images/Captura4.PNG)
+
 ### 4. Ejecución automática del pipeline
 
 Cada vez que se realiza un cambio en el repositorio, Jenkins detecta el evento y ejecuta automáticamente el pipeline configurado. Esto permite verificar de forma inmediata que el código sigue funcionando correctamente.
+
+![captura](images/Captura5.PNG)
 
 ### 5. Validación de las pruebas
 
 Cuando Jenkins ejecuta el pipeline, realiza las pruebas definidas en `test_calculator.py`. En nuestro caso, se han definido 4 pruebas unitarias para validar las operaciones básicas de la calculadora (suma, resta, multiplicación y división). Las pruebas se ejecutan correctamente, lo que indica que el proyecto es estable.
 
+![captura](images/Captura6.PNG)
+
 ## Resultado
 
 El resultado final es un sistema de integración continua funcional, que permite validar automáticamente los cambios en el código mediante la ejecución de pruebas unitarias. Esto mejora la calidad del software y facilita el mantenimiento del proyecto.
+
+![captura](images/Captura7.PNG)
 
