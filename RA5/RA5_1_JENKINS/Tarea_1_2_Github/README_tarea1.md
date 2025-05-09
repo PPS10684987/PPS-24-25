@@ -45,4 +45,4 @@ Esto asegura que el método funcione correctamente en distintas situaciones.
 
 Para ejecutar las pruebas: python -m unittest test_calculator.py
 
-![captura](images/Captura3.PNG)
+![captura](images/Captura1.PNG)
