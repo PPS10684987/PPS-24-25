@@ -35,7 +35,6 @@ El archivo `jenkinsfile.docker` contiene una pipeline de Jenkins que sigue estos
 
 ### Fragmentos clave de la pipeline
 
-```groovy
 // Construcción de la imagen
 docker build -t calculadora-python .
 
