@@ -15,8 +15,11 @@ La estructura de carpetas relevante del repositorio es la siguiente:
 - `test_calculator.py`: archivo con las pruebas unitarias.
 - `Dockerfile`: archivo que define cómo construir la imagen Docker.
 - `jenkinsfile.docker`: define la pipeline de Jenkins.
+
 ![captura](images/Captura9.PNG)
+
 ![captura](images/Captura8.PNG)
+
 ---
 
 ## Jenkinsfile - Pipeline 
