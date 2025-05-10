@@ -1,0 +1,58 @@
+pipeline {
+    agent any
+
+    environment {
+        IMAGE_NAME = 'calculadora-python'
+        CONTAINER_NAME = 'calculadora_test'
+        TEST_PATH = '/app/test_calculator.py'
+        WORKDIR = 'RA5/RA5_1_JENKINS/JenkinsFile_docker/codigo'
+    }
+
+    stages {
+
+        stage('Construir imagen Docker') {
+            steps {
+                dir("${WORKDIR}") {
+                    sh "docker build -t ${IMAGE_NAME} ."
+                }
+            }
+        }
+
+        stage('Ejecutar contenedor') {
+            steps {
+                sh "docker run -d --name ${CONTAINER_NAME} ${IMAGE_NAME} tail -f /dev/null"
+            }
+        }
+
+        stage('Ejecutar tests dentro del contenedor') {
+            steps {
+                sh "docker exec ${CONTAINER_NAME} python3 ${TEST_PATH}"
+            }
+        }
+
+        stage('Verificar docker-compose') {
+            steps {
+                dir("${WORKDIR}") {
+                    sh 'docker compose config'
+                }
+            }
+        }
+
+        stage('Ejecutar docker-compose') {
+            steps {
+                dir("${WORKDIR}") {
+                    sh 'docker compose up -d'
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            sh "docker rm -f ${CONTAINER_NAME} || true"
+            dir("${WORKDIR}") {
+                sh 'docker compose down || true'
+            }
+        }
+    }
+}
