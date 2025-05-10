@@ -33,7 +33,7 @@ pipeline {
         stage('Verificar docker-compose') {
             steps {
                 dir("${WORKDIR}") {
-                    sh 'docker compose config'
+                    sh 'docker-compose config'
                 }
             }
         }
@@ -41,7 +41,7 @@ pipeline {
         stage('Ejecutar docker-compose') {
             steps {
                 dir("${WORKDIR}") {
-                    sh 'docker compose up -d'
+                    sh 'docker-compose up -d'
                 }
             }
         }
@@ -51,7 +51,7 @@ pipeline {
         always {
             sh "docker rm -f ${CONTAINER_NAME} || true"
             dir("${WORKDIR}") {
-                sh 'docker compose down || true'
+                sh 'docker-compose down || true'
             }
         }
     }
