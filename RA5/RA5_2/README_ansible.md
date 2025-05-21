@@ -38,7 +38,7 @@ Al quitar el apartado del upgrade del playbook:
 
 ![captura](images_ansible/Captura9.PNG)
 
-Correcta instalación de Apche2:
+Correcta instalación de Apache2:
 
 ![captura](images_ansible/Captura10.PNG)
 
@@ -46,16 +46,20 @@ Correcta instalación de Apche2:
 
 ## 3.3. Configuración del contenido web y verificación con Ansible
 
-En la segunda parte de la actividad se implementaron tareas adicionales para crear contenido web básico y verificarlo automáticamente:
+En la segunda parte de la Práctica se implementaram tareas adicionales para crear contenido web y verificarlo automáticamente mediante Ansible.
+
+Para lograr el cometido de la tarea, modificaremos el playboook de Ansible. Para que despues de comprobar el servicio de Apache realize lo siguiente:
 
 1. **Crear un archivo `index.html` personalizado**:  
    Se utilizó el módulo `copy` para crear el archivo `/var/www/html/index.html` con el contenido `Ansible rocks`, asignando los permisos correctos y asegurando que el servidor pudiera servirlo.
 
 2. **Reiniciar el servicio Apache**:  
-   Luego de crear el archivo, se reinició el servicio `apache2` con Ansible para que los cambios fueran aplicados correctamente.
+   Luego de crear el archivo, se reiniciara el servicio `apache2` con Ansible para que los cambios fueran aplicados correctamente.
 
 3. **Realizar un `curl` local y verificar el contenido**:  
    Se ejecutó `curl http://localhost` mediante el módulo `command`, y el resultado se almacenó con `register`. Finalmente, se usó el módulo `assert` para verificar que el contenido de la respuesta incluía el texto `Ansible rocks`.
+
+![captura](images_ansible/Captura11.PNG)
 
 ---
 
@@ -67,3 +71,6 @@ El playbook se ejecutó correctamente, aplicando cada paso sin errores:
 - Apache fue instalado y reiniciado correctamente.
 - El archivo `index.html` fue creado exitosamente.
 - El contenido del servidor fue verificado mediante `curl
+
+![captura](images_ansible/Captura12.PNG)
+![captura](images_ansible/Captura13.PNG)
