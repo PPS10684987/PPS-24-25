@@ -1,4 +1,3 @@
-<<<<<<< HEAD:RA5/RA5_2/README_Terraform.md
 # Provisionamiento de una Máquina Virtual Ubuntu 24.04 en VirtualBox usando Terraform
 
 Esta práctica muestra cómo utilizar Terraform para crear una máquina virtual de Ubuntu 24.04 en VirtualBox.
@@ -36,7 +35,8 @@ Además, deberemos especificar el provider que hemos clonado.
 Para implementar correctamente el provider dberemos ejecutar el init de Terraform añadiendo el parametro "-upgrade". Así, lograremos installar el provider y se iniciara correctamente.
 
     ```bash
-       terraform init -upgrade
+       terraform init (ejecución normal)
+       terraform init -upgrade (ejecución actualizada)
     ```
 !(captura)[images_terraform/Captura13.PNG]
 
@@ -99,4 +99,4 @@ Finalmente, al finalizar la ejecución del terraform, nos dirigiremos a virtualb
 
 ![captura](images_terraform/Captura15.PNG)
 ![captura](images_terraform/Captura20.PNG)
->>>>>>> 6c0ab4b1bd79d16ff1d0584bd2ca7885dd1d1100:RA5/RA5_2/README.md
+
