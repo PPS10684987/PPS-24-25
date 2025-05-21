@@ -18,8 +18,8 @@ Terraform no tiene un proveedor oficial de VirtualBox en su registro, por lo tan
 
     ```bash
     git clone https://github.com/terra-farm/terraform-provider-virtualbox.git
-    cd terraform-provider-virtualbox
     ```
+!(captura)[images_terraform/Captura19.PNG]
 
 2. Creamos un directroio para Terraform y los archivos necesarios para la creación de la MV en terraform (main.tf):
 
@@ -27,8 +27,13 @@ Terraform no tiene un proveedor oficial de VirtualBox en su registro, por lo tan
     mkdir terraform-virtualbox
     nano main.tf
     ```
+
+!(captura)[images_terraform/Captura1.PNG]
+
 A continuación, dentro del archivo main.tf añadimos la definición de la máquina virtual a provisionar. Este archivo incluye el nombre de la VM, la cantidad de CPU, memoria, el adaptador de red y la ruta al archivo (image) `.vdi` u `ova`.
 Además, deberemos especificar el provider que hemos clonado.
+
+!(captura)[images_terraform/Captura14.PNG]
 
 3. Actualización e Inicio de Terraform:
 
@@ -44,3 +49,5 @@ Para implementar correctamente el provider dberemos ejecutar el init de Terrafor
 Al crear el archivo `main.tf` con la definición de la máquina virtual a provisionar e iniciar Terraform correctamente, ya podremos aplicar la configuración de la MV. Para ello, ejecutaremos "terraform apply" Terraform mostrará un resumen de los cambios que realizará. Escribimos yes para confirmar y proceder con la creación de la máquina virtual.
 Finalmente, al finalizar la ejecución del terraform, nos dirigiremos a virtualbox y podremos observar que efectivamente se ha creado la MV en virtualbox mediante Terraform. Aunque tiene algún que otro error de reación, ya que me ha creado la MV pero sin ningún adaptador de red y tampoco con ningún disco. Este problema, no lo he conseguido solucionar.
 
+!(captura)[images_terraform/Captura15.PNG]
+!(captura)[images_terraform/Captura20.PNG]
