@@ -64,7 +64,7 @@ service apache2 reload
 ### **4. Antes de verificar que HSTS está activo, debemos certificar nuestro dominio**
 Para garantizar que el tráfico cifrado es confiable, necesitamos configurar un certificado digital para nuestro servidor Apache.
 
-# 4. Implementación de un certificado digital en Apache
+# 🔒 Implementación de un certificado digital en Apache
 
 ### ¿Qué es un certificado digital?
 
