@@ -162,6 +162,41 @@ curl -I http://www.apachepps.com
 ```
 ![captura](images/Captura13.PNG)
 
+## 📌 Imagen de Docker HSTS y CSP
+
+Una vez configurado y probado nuestro servidor Apache con HSTS (Strict Transport Security) y CSP (Content Security Policy), podemos guardar la imagen y subirla a Docker Hub para poder reutilizarla.
+Primero, para asegurarnos de que nuestro contenedor Apache con HSTS y CSP está corriendo correctamente, listamos los contenedores activos:
+```bash
+sudo docker ps
+```
+Hacemos un commit del contenedor en una nueva imagen.
+```bash
+sudo docker commit apache-container pps10684987/pps24-25:v1
+```
+  
+Esta imagen podemos subirla a Docker Hub, para ello:
+- Iniciamos sesión en Docker Hub:
+```bash
+sudo docker login
+```
+- Subimos la imagen:
+```bash
+sudo docker push pps10684987/pps24-25:v1
+```
+
+## 📌 Conclusión
+
+A lo largo de este proceso de hardening del servidor Apache, hemos implementado varias medidas clave que fortalecen significativamente su seguridad frente a amenazas comunes en entornos web.
+
+En primer lugar, configuramos **HSTS (HTTP Strict Transport Security)**, lo que garantiza que todas las conexiones con el servidor se realicen exclusivamente a través de HTTPS. Esto protege a los usuarios contra ataques de tipo *man-in-the-middle* y evita que accedan accidentalmente a versiones inseguras del sitio.
+
+Luego, incorporamos una política de **CSP (Content Security Policy)**, que nos permite definir explícitamente qué recursos pueden ser cargados por el navegador. Esta medida ayuda a prevenir ataques como el **Cross-Site Scripting (XSS)** y la ejecución de contenido malicioso proveniente de fuentes no autorizadas.
+
+También abordamos la importancia de contar con un **certificado digital SSL/TLS**, asegurando que la identidad del servidor pueda ser verificada y que los datos transmitidos estén cifrados. Esto es esencial no solo para la seguridad, sino también para la confianza del usuario.
+
+Además, realizamos toda esta configuración dentro de un **contenedor Docker**, lo cual facilita la portabilidad, el control de versiones y la implementación en distintos entornos, asegurando que el servidor Apache mantenga una configuración segura desde el inicio.
+
+
 
 
 
