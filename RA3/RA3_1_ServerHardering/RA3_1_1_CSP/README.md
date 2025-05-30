@@ -23,11 +23,11 @@ Antes de comenzar, se requiere:
 
 - Un contenedor Docker corriendo Apache (por ejemplo, basado en `httpd`).
 
-[captura](images/Captura1.PNG)
+![captura](images/Captura1.PNG)
 
 - Acceso al terminal **dentro del contenedor** de Apache.
 
-[captura](images/Captura2.PNG)
+![captura](images/Captura2.PNG)
 
 ---
 
