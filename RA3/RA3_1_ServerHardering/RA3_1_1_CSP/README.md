@@ -53,7 +53,7 @@ nano /etc/apache2/conf-available/security.conf
 - **`max-age=63072000`** →  Indica que los navegadores deben recordar esta política durante **2 años**(en segundos). 
 - **`includeSubDomains`** → Aplica la política a todos los subdominios del dominio actual.
 
-## **3. Activar la configuración y reiniciar Apache**
+### **3. Activar la configuración y reiniciar Apache**
 ```bash
 a2enconf security
 
@@ -124,7 +124,7 @@ curl -I -k https://www.apachepps.com
 ```
 ![captura](images/Captura10.PNG)
 
-## 🛡️ 5. Implementación de CSP (Content Security Policy)
+## 🛡️ Implementación de CSP (Content Security Policy)
 
 ### ¿Qué es CSP?
 
@@ -154,7 +154,7 @@ service apache2 reload
 
 ---
 
-### 3. Validación Final
+### **3. Comprobación Final**
 
 Para comprobar que **Apache está bien configurado y activo con HSTS y CSP**, usa:
 ```bash
