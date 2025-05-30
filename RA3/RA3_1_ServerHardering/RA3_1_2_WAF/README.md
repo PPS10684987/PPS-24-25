@@ -41,7 +41,7 @@ a2enmod security2
 ```bash
 cp /etc/modsecurity/modsecurity.conf-recommended ./modsecurity.conf
 ```
-![captura](images/Captura16.PNG)
+![captura](../RA3_1_3_OWASP/images/Captura16.PNG)
 
 ### **4. Editamos el archivo para activar el motor de reglas:**
 ```bash
