@@ -91,7 +91,7 @@ nano /etc/apache2/sites-available/default-ssl.conf
 ```
 Agregamos la siguiente configuración dentro de `<VirtualHost *:80>`:
 ```bash
-ServerName www.midominioseguro.com
+ServerName www.apachepps.com
 Redirect permanent / https://www.apachepps.com/
 ```
 Y tammbién agregamos dentro de `<VirtualHost *:443>` esta configuración:
