@@ -108,7 +108,7 @@ Si la configuración de mod_evasive es correcta, Apache empezará a rechazar sol
 
 ## 📌 Imagen de Docker DDOS
 
-Una vez configurado y probado nuestro servidor Apache con mod_evasive para mitigar ataques de Denegación de Servicio (DoS), podemos guardar la imagen y subirla a Docker Hub para reuti>
+Una vez configurado y probado nuestro servidor Apache con mod_evasive para mitigar ataques de Denegación de Servicio (DoS), podemos guardar la imagen y subirla a Docker Hub para reutilizarla.
 
 Primero, identificamos el ID del contenedor donde hemos configurado Apache con mod_evasive:
 ```bash
