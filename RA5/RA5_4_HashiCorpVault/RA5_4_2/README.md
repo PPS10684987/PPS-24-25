@@ -50,6 +50,7 @@ Deberemos dirigirnos a la administración de Jenkins y rellenar los campos de la
 
 ### 2. **Creación del pipeline**
 Crearemos un pipeline otra vez con un script declarativo, en este caso, nombrado como "prueba-secreta-Vault". El script configurado indica un pipeline declarativo de Jenkins que accede de forma segura a un secreto almacenado en HashiCorp Vault y lo utiliza dentro de una etapa del pipeline.
+
 ![captura](images/Captura23.PNG)
 ![captura](images/Captura25.PNG)
 
