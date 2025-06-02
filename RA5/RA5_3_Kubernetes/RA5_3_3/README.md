@@ -79,4 +79,5 @@ Accedemos a la aplicación: "http://192.168.1.131:4000" Si aparece el mensaje de
 Tambien lo podremos comprobar desde el dashboard de Traefik. Ya que se puede observar que esta en correcto funcionamiento.
 ![captura](images/Captura27.PNG)
 
-
+## ✅ Conclusión
+En conclusión, aunque la intención inicial era desplegar el docker-compose.yml dentro de un clúster K3s y validar su funcionamiento con K9s, los porblemas técnicos impidieron su realización. La solución alternativa de utilizar Docker directamente permitió alcanzar los objetivos de la tarea, proporcionando una comprensión práctica del despliegue y gestión de aplicaciones en contenedores.
