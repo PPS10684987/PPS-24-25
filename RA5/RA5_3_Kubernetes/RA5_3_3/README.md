@@ -73,6 +73,7 @@ sudo docker-compose up -d --scale web=5
 
 ### En nuestro navegador:
 Accedemos a la aplicación: "http://192.168.1.131:4000" Si aparece el mensaje de "Hello World!" y el hostname cambia al recargar, significa que el balanceo esta funcionando correctamente.
+
 ![captura](images/Captura25.PNG) ![captura](images/Captura26.PNG)
 
 Tambien lo podremos comprobar desde el dashboard de Traefik. Ya que se puede observar que esta en correcto funcionamiento.
