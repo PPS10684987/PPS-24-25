@@ -20,7 +20,7 @@ Antes de comenzar, deberemos asegúrarnos de tener:
 
 ### 1. **Inicia Vault en modo desarrollo:**
 
-Al inciar Vault, al final de la ejecución deberemos tener en cuenta que nos mostrara nuestro "root token". Que deberemos guarda o copiar ya que será necesario a continuación.
+Al inciar Vault, al final de la ejecución deberemos tener en cuenta que nos mostrara nuestro "root token". Que deberemos guarda o copiar ya que será necesario más adelante.
 
    ```bash
    vault server -dev
