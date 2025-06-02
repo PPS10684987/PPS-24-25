@@ -44,7 +44,7 @@ sudo cat /var/lib/rancher/k3s/server/node-token
 ```
 ![captura](images/Captura11.PNG)
 
-# Añadir el resto de nodos al plano de control (Ubuntu Server 2 y 3).
+# Añadir el resto de nodos al plano de control.
 
 ### En los demás nodos ejecutaremos:
 
