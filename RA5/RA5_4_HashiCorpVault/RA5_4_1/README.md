@@ -12,7 +12,7 @@ Esta tarea consiste en configurar Jenkins para manejar secretos (como contraseñ
 
 ## Pasos Realizados
 
-1. **Creación de Credenciales en Jenkins:**
+### 1. **Creación de Credenciales en Jenkins:**
    - Ingresar a Jenkins.
    - Navegar a **Administrar Jenkins > Credenciales > Update credentials**.
    - Agregar nuevas credenciales:
@@ -24,7 +24,7 @@ Esta tarea consiste en configurar Jenkins para manejar secretos (como contraseñ
 
 ![captura](images/Captura2.PNG)
 
-2. **Configuración del Pipeline con Jenkinsfile:**
+### 2. **Configuración del Pipeline con Jenkinsfile:**
 
    - Crear un pipeline, en este caso, nombrado como "prueba-secreta".
      ![captura](images/Captura3.PNG)
@@ -40,7 +40,7 @@ En este caso, indicamos el script que vamos a utilizar. Como se puede observar, 
   
    - Acceder a las credenciales en las etapas del pipeline sin imprimirlas directamente.
 
-4. **Ejecución Correcta del Pipeline con Uso Seguro de Credenciales**
+### 4. **Ejecución Correcta del Pipeline con Uso Seguro de Credenciales**
    - Ejemplo de uso de una credencial en el pipeline para conectarse a un servicio externo.
 Como se puede observar, al ejecutar el pipeline, se conecta a la web indicada en el script e inicia sesión mediante las credenciales configuradas en Jenkins. Pero en los logs y en su ejecución no muestran la contraseña y la matienen oculta. Esto indica que este pipeline de Jenkins ha sido ejecutado correctamente y cumple con su objetivo principal: utilizar credenciales de forma segura sin exponer información sensible en los logs.
  ![captura](images/Captura12.PNG)
