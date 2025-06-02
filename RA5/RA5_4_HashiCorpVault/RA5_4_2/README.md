@@ -33,10 +33,10 @@ Al inciar Vault, al final de la ejecución deberemos tener en cuenta que nos mos
 ![captura](images/Captura19.PNG)
 
 ### 3. **Agregar un secreto a Vault**
-En este caso, agregaremos un secreto a vault, nombrado "secretisimo".
+En este caso, agregaremos un secreto a vault, una contraseña que será "secretisimo".
 ![captura](images/Captura20.PNG)
 
-Si accedemos a la interfaz de Vault mediante el token y revisamos los secretos podremos observar que el secreto "secretisimo" se ha creado correctamente.
+Si accedemos a la interfaz de Vault mediante el token y revisamos los secretos podremos observar que la contraseña secreta "secretisimo" se ha creado y almacenado correctamente.
 ![captura](images/Captura29.PNG)
 ![captura](images/Captura30.PNG)
 ![captura](images/Captura31.PNG)
