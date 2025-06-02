@@ -42,6 +42,7 @@ En este caso, indicamos el script que vamos a utilizar. Como se puede observar, 
 
 ### 4. **Ejecución Correcta del Pipeline con Uso Seguro de Credenciales**
    - Ejemplo de uso de una credencial en el pipeline para conectarse a un servicio externo.
+
 Como se puede observar, al ejecutar el pipeline, se conecta a la web indicada en el script e inicia sesión mediante las credenciales configuradas en Jenkins. Pero en los logs y en su ejecución no muestran la contraseña y la matienen oculta. Esto indica que este pipeline de Jenkins ha sido ejecutado correctamente y cumple con su objetivo principal: utilizar credenciales de forma segura sin exponer información sensible en los logs.
  ![captura](images/Captura12.PNG)
  ![captura](images/Captura13.PNG)
