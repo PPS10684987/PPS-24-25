@@ -44,7 +44,7 @@ Si accedemos a la interfaz de Vault mediante el token y revisamos los secretos p
 ## ⚙️ Configuración de Jenkins.
 
 ### 1. **Configurar Vault en Jenkins**
-Deberemos dirigirnos a la administración de Jenkins y rellenar los campos de la sección "Vault" como se muestra en la imagen. Indicando, las credenciales mediante token de Vault.
+Deberemos dirigirnos a la administración de Jenkins y rellenar los campos de la sección "Vault" como se muestra en la imagen. Indicando, las credenciales mediante token de Vault y su dirección.
 ![captura](images/Captura21.PNG)
 ![captura](images/Captura22.PNG)
 
